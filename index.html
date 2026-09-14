@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- 나의 할 일 목록 앱 메인 페이지 -->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나의 할 일 목록</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 전체를 감싸는 카드 컨테이너 -->
+  <main class="app-card">
+    <h1 class="app-title">나의 할 일 목록</h1>
+
+    <!-- 할 일 입력 영역 -->
+    <div class="input-row">
+      <input
+        type="text"
+        id="todo-input"
+        class="todo-input"
+        placeholder="할 일을 입력하세요"
+      />
+      <button type="button" id="add-btn" class="add-btn">추가</button>
+    </div>
+
+    <!-- 전체/완료 개수 표시 영역 -->
+    <p id="todo-count" class="todo-count"></p>
+
+    <!-- 필터 버튼 영역 -->
+    <div class="filter-row">
+      <button type="button" class="filter-btn" data-filter="all">전체</button>
+      <button type="button" class="filter-btn" data-filter="active">진행중</button>
+      <button type="button" class="filter-btn" data-filter="completed">완료</button>
+    </div>
+
+    <!-- 할 일 목록 영역 -->
+    <ul id="todo-list" class="todo-list"></ul>
+
+    <!-- 완료 항목 일괄 삭제 버튼 -->
+    <button type="button" id="clear-completed-btn" class="clear-completed-btn">완료된 항목 삭제</button>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
