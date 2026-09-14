@@ -17,4 +17,4 @@
 
 - `index.html` — 페이지 구조
 - `style.css` — 스타일
-- `main.js` — 동작 로직.
+- `main.js` — 동작 로직~!@#$
